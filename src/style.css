@@ -1,0 +1,98 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--bc-white: hsla(283, 47%, 97%, 1);
+--bc-blue:hsla(244, 38%, 28%, 1);
+--fc-pink:hsla(320, 69%, 42%, 1);
+--fc-blue:hsla(244, 38%, 28%, 1);
+
+--ff-text: 'Mulish', sans-serif;
+
+font-size: 62.5%;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    font-family: var(--ff-text);
+}
+.app{
+
+    width: 100vw;
+    
+}
+
+.mainlandginPage{
+    width: 100vw;
+    padding: 0 3rem;
+}
+
+.mainlandginPageImage{
+    display: block;
+    margin: auto;
+}
+.mainLandinPageTitle{
+    margin-top: 1.7rem;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--fc-pink);
+    
+}
+
+.mainLandinPageText{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--fc-blue);
+}
+
+.landginPageImageArrowDown{
+    margin-top: 3.5rem;
+    margin-bottom: 9.3rem;
+    text-align: center;
+    margin-inline: auto;
+    display: block;
+}
+
+.cards{
+    width: 100vw;
+    background-color: var(--bc-blue);
+    padding: 5rem 4rem;
+
+}
+
+.cardContent{
+    background: var(--bc-white);
+    border-radius: 20px;
+    padding: 2.7rem;
+    margin-bottom: 5rem;
+}
+.cardContentImage{
+    margin-bottom:3rem ;
+}
+
+.cardContentTitle{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--fc-pink);
+    margin-bottom: 2rem;
+}
+
+.cardContentText{
+    color: var(--fc-blue);
+    font-weight: 600;
+    font-size: 16px;
+
+
+}
