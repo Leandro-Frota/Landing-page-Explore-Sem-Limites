@@ -1,63 +1,63 @@
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
---bc-white: hsla(283, 47%, 97%, 1);
---bc-blue:hsla(244, 38%, 28%, 1);
---fc-pink:hsla(320, 69%, 42%, 1);
---fc-blue:hsla(244, 38%, 28%, 1);
+:root {
+    --bc-white: hsla(283, 47%, 97%, 1);
+    --bc-blue: hsla(244, 38%, 28%, 1);
+    --fc-pink: hsla(320, 69%, 42%, 1);
+    --fc-blue: hsla(244, 38%, 28%, 1);
 
---ff-text: 'Mulish', sans-serif;
+    --ff-text: 'Mulish', sans-serif;
 
-font-size: 62.5%;
+    font-size: 62.5%;
 }
 
-body{
+body {
     width: 100%;
     min-height: 100%;
     font-family: var(--ff-text);
 }
-.app{
+
+.app {
 
     width: 100vw;
-    
+
 }
 
-.mainlandginPage{
+.mainlandginPage {
     width: 100vw;
     padding: 0 3rem;
 }
 
-.mainlandginPageImage{
+.mainlandginPageImage {
     display: block;
     margin: auto;
 }
-.mainLandinPageTitle{
+
+.mainLandinPageTitle {
     margin-top: 1.7rem;
     text-align: center;
     font-size: 3.2rem;
     font-weight: 900;
     color: var(--fc-pink);
-    
+
 }
 
-.mainLandinPageText{
+.mainLandinPageText {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
     color: var(--fc-blue);
 }
 
-.landginPageImageArrowDown{
+.landginPageImageArrowDown {
     margin-top: 3.5rem;
     margin-bottom: 9.3rem;
     text-align: center;
@@ -65,34 +65,117 @@ body{
     display: block;
 }
 
-.cards{
+.cards {
     width: 100vw;
     background-color: var(--bc-blue);
     padding: 5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 
 }
 
-.cardContent{
+.cardContent {
     background: var(--bc-white);
     border-radius: 20px;
     padding: 2.7rem;
-    margin-bottom: 5rem;
-}
-.cardContentImage{
-    margin-bottom:3rem ;
+
 }
 
-.cardContentTitle{
+.cardContentImage {
+    margin-bottom: 3rem;
+}
+
+.cardContentTitle {
     font-size: 3rem;
     font-weight: 900;
     color: var(--fc-pink);
     margin-bottom: 2rem;
 }
 
-.cardContentText{
+.cardContentText {
     color: var(--fc-blue);
     font-weight: 600;
     font-size: 16px;
 
+
+}
+
+.formContent {
+    padding: 2.7rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.formContentTitle {
+    color: #B52184;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 5rem 0 4rem 0;
+}
+
+.formContentInput {
+    width: 100%;
+    border: 1px solid var(--bc-blue);
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2.4rem;
+
+
+}
+
+.inputName,
+.inputEmail {
+    border: none;
+}
+
+.inputName::placeholder,
+.inputEmail::placeholder {
+    color: var(--fc-blue);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.inputTextArea {
+    border: none;
+}
+
+.formContentButton {
+    display: inline-flex;
+    width: fit-content;
+    height: 45px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background-color: var(--bc-blue);
+    color: var(--bc-white);
+    margin-bottom: 4rem;
+}
+.footerCotainer{
+
+}
+
+.footer {
+    background-color: var(--bc-blue);
+    color: var(--bc-white);
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 1.6rem;
 
 }
