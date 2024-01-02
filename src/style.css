@@ -37,6 +37,7 @@ body {
 }
 
 .mainlandginPageImage {
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -164,9 +165,12 @@ body {
     color: var(--bc-white);
     margin-bottom: 4rem;
 }
-.footerCotainer{
 
+.formImageDesktop{
+    display: none;
 }
+
+.footerCotainer {}
 
 .footer {
     background-color: var(--bc-blue);
@@ -178,4 +182,79 @@ body {
     line-height: normal;
     padding: 1.6rem;
 
+}
+
+@media (min-width: 700px) {
+    .mainlandginPage {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .mainLandinPageImageContainer {
+        flex: 1;
+        max-height: 100vh;
+    }
+
+    .mainlandginPageImage {
+        width: 80%
+    }
+
+    .mainLandinPageTextContainer {
+        flex: 1;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-left: 10rem;
+
+
+    }
+
+    .mainLandinPageTitle {
+        font-size: 6rem;
+        margin-top: 20rem;
+    }
+
+    .mainLandinPageText {
+        font-size: 3.2rem;
+    }
+
+    .landginPageImageArrowDown {
+        margin-inline: 0;
+        margin-top: 15rem;
+        width: 5.8rem;
+
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        padding: 6.4rem 11.1rem;
+    }
+
+    .cardContent{
+        padding: 3.2rem;
+        width: 37rem;
+        height: 45rem;
+    }
+    
+    .formContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .formContent{
+        flex:1;
+        padding: 5rem 10rem;
+    }
+
+    .formImageDesktop{
+        display: block;
+        flex: 1;
+    }
 }
