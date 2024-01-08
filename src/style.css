@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap');
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -20,28 +18,45 @@
 }
 
 body {
-    width: 100%;
+    max-width: 100vw;
     min-height: 100%;
     font-family: var(--ff-text);
 }
 
 .app {
 
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 
 }
 
 .mainlandginPage {
-    width: 100vw;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+.mainLandinPageImageContainer{
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mainlandginPageImageDesktop{
+    display: none;
+}
+.mainlandginPageImage {
+    max-width: 100%;
+
+}
+
+.mainLandinPageTextContainer{
     padding: 0 3rem;
 }
-
-.mainlandginPageImage {
-    width: 100%;
-    display: block;
-    margin: auto;
-}
-
 .mainLandinPageTitle {
     margin-top: 1.7rem;
     text-align: center;
@@ -67,16 +82,20 @@ body {
 }
 
 .cards {
-    width: 100vw;
+    width: 100%;
     background-color: var(--bc-blue);
     padding: 5rem 4rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5rem;
 
 }
 
 .cardContent {
+    width: 100%;
+    height: auto;
     background: var(--bc-white);
     border-radius: 20px;
     padding: 2.7rem;
@@ -101,9 +120,14 @@ body {
 
 
 }
-
+.formContainer{
+    width: 100%;
+    display: flex;
+    
+}
 .formContent {
-    padding: 2.7rem;
+    width: 100%;
+    padding: 4rem 5rem;
     display: flex;
     flex-direction: column;
 
@@ -170,7 +194,6 @@ body {
     display: none;
 }
 
-.footerCotainer {}
 
 .footer {
     background-color: var(--bc-blue);
@@ -184,23 +207,30 @@ body {
 
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1000px) {
     .mainlandginPage {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        height: 100vh;
+        max-height: 100vh;
+        align-items: start ;
     }
 
     .mainLandinPageImageContainer {
         flex: 1;
-        max-height: 100vh;
+        height: 100%;
+        width: 100%;
+   
     }
 
+    
     .mainlandginPageImage {
-        width: 80%
+        display: none;
     }
-
+    .mainlandginPageImageDesktop{
+        display: block;
+        max-width: 100%;
+    }
     .mainLandinPageTextContainer {
         flex: 1;
         max-height: 100%;
@@ -232,7 +262,6 @@ body {
     .cards {
         display: flex;
         flex-direction: row;
-        height: 100vh;
         padding: 6.4rem 11.1rem;
     }
 
