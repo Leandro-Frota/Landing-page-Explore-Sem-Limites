@@ -212,7 +212,6 @@ body {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
-        max-height: 100vh;
         align-items: start ;
     }
 
